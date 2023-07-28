@@ -1,0 +1,78 @@
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  animation: App-logo-spin infinite 20s linear;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Custom styles for the Resistor Calculator */
+#root {
+  margin-top: 30px;
+}
+
+select {
+  margin: 5px;
+}
+
+/* Styling for the resistor bands */
+div.Resistor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 60px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+div.Band {
+  width: 20%;
+  height: 100%;
+}
+
+/* Adding colors to the resistor bands */
+div.Band:nth-child(1) { background-color: black; }
+div.Band:nth-child(2) { background-color: brown; }
+div.Band:nth-child(3) { background-color: red; }
+div.Band:nth-child(4) { background-color: orange; }
+div.Band:nth-child(5) { background-color: yellow; }
+div.Band:nth-child(6) { background-color: green; }
+div.Band:nth-child(7) { background-color: blue; }
